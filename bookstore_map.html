@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ebb21470a7db15f712126bd851bc7081 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ebb21470a7db15f712126bd851bc7081" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ebb21470a7db15f712126bd851bc7081 = L.map(
+                "map_ebb21470a7db15f712126bd851bc7081",
+                {
+                    center: [48.8529, 2.3471],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f68e0d478118044f84f9428b74518710 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f68e0d478118044f84f9428b74518710.addTo(map_ebb21470a7db15f712126bd851bc7081);
+        
+    
+            var marker_63454872215e6eb09910655eaee00c67 = L.marker(
+                [48.8529, 2.3471],
+                {
+}
+            ).addTo(map_ebb21470a7db15f712126bd851bc7081);
+        
+    
+            var icon_e35aeee4962628eb89ec704313db6268 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aaebaa58ade04eaa095a0b88c1446dbd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1300d8c3709f8c160561e26235834abf = $(`<div id="html_1300d8c3709f8c160561e26235834abf" style="width: 100.0%; height: 100.0%;">Center Point</div>`)[0];
+                popup_aaebaa58ade04eaa095a0b88c1446dbd.setContent(html_1300d8c3709f8c160561e26235834abf);
+            
+        
+
+        marker_63454872215e6eb09910655eaee00c67.bindPopup(popup_aaebaa58ade04eaa095a0b88c1446dbd)
+        ;
+
+        
+    
+    
+                marker_63454872215e6eb09910655eaee00c67.setIcon(icon_e35aeee4962628eb89ec704313db6268);
+            
+    
+            var circle_b79b91ecfca28e19de0b1c6e7c8064dc = L.circle(
+                [48.8529, 2.3471],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
+            ).addTo(map_ebb21470a7db15f712126bd851bc7081);
+        
+    
+            var marker_9be87eb6d556284e4c97e84452290b20 = L.marker(
+                [48.8525632, 2.3471303],
+                {
+}
+            ).addTo(map_ebb21470a7db15f712126bd851bc7081);
+        
+    
+            var icon_a292c0dd63acca3e862b2ee71937a47e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e549eb0941e3cf19c738108b8dd3c47 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e5d06549a6b486e37862c8f79816b03d = $(`<div id="html_e5d06549a6b486e37862c8f79816b03d" style="width: 100.0%; height: 100.0%;">         <b>Shakespeare and Company</b><br>         Address: 37 Rue de la Bûcherie, 75005 Paris, France<br>         Rating: 4.6 (22742 reviews)<br>Distance from center: 0.04 km<br>Types: book_store, tourist_attraction, store, point_of_interest, establishment<br>Found via: {'includedTypes': ['book_store']}</div>`)[0];
+                popup_2e549eb0941e3cf19c738108b8dd3c47.setContent(html_e5d06549a6b486e37862c8f79816b03d);
+            
+        
+
+        marker_9be87eb6d556284e4c97e84452290b20.bindPopup(popup_2e549eb0941e3cf19c738108b8dd3c47)
+        ;
+
+        
+    
+    
+                marker_9be87eb6d556284e4c97e84452290b20.setIcon(icon_a292c0dd63acca3e862b2ee71937a47e);
+            
+    
+            var marker_d11801194b8b8402a6013f640556e54d = L.marker(
+                [48.848925699999995, 2.3572313],
+                {
+}
+            ).addTo(map_ebb21470a7db15f712126bd851bc7081);
+        
+    
+            var icon_bfaef9157a31cd0f5a5dc92098705985 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3dacf801e95f6c06b7febcd128c754ba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1484970fed8a8325ea1fbeb2a5a7fbd2 = $(`<div id="html_1484970fed8a8325ea1fbeb2a5a7fbd2" style="width: 100.0%; height: 100.0%;">         <b>Arab World Institute</b><br>         Address: 1 Rue des Fossés Saint-Bernard, 75005 Paris, France<br>         Rating: 4.2 (2243 reviews)<br>Distance from center: 0.86 km<br>Types: cultural_center, tourist_attraction, movie_theater, museum, book_store, event_venue, library, store, restaurant, food, point_of_interest, establishment<br>Found via: {'includedTypes': ['book_store']}</div>`)[0];
+                popup_3dacf801e95f6c06b7febcd128c754ba.setContent(html_1484970fed8a8325ea1fbeb2a5a7fbd2);
+            
+        
+
+        marker_d11801194b8b8402a6013f640556e54d.bindPopup(popup_3dacf801e95f6c06b7febcd128c754ba)
+        ;
+
+        
+    
+    
+                marker_d11801194b8b8402a6013f640556e54d.setIcon(icon_bfaef9157a31cd0f5a5dc92098705985);
+            
+    
+            var marker_d5e6bc97004cdfc71ce7f7e77a77dd48 = L.marker(
+                [48.8458344, 2.3254321],
+                {
+}
+            ).addTo(map_ebb21470a7db15f712126bd851bc7081);
+        
+    
+            var icon_f5de730d1ebafb271e45cb39786b5665 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e335ee4457eced0f357007380824ef57 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_35f2a5096d8ef3b15e0e945b4f8b1cf4 = $(`<div id="html_35f2a5096d8ef3b15e0e945b4f8b1cf4" style="width: 100.0%; height: 100.0%;">         <b>Fnac</b><br>         Address: 136 Rue de Rennes, 75006 Paris, France<br>         Rating: 4.1 (16880 reviews)<br>Distance from center: 1.77 km<br>Types: department_store, cell_phone_store, electronics_store, home_goods_store, book_store, store, point_of_interest, establishment<br>Found via: {'includedTypes': ['book_store']}</div>`)[0];
+                popup_e335ee4457eced0f357007380824ef57.setContent(html_35f2a5096d8ef3b15e0e945b4f8b1cf4);
+            
+        
+
+        marker_d5e6bc97004cdfc71ce7f7e77a77dd48.bindPopup(popup_e335ee4457eced0f357007380824ef57)
+        ;
+
+        
+    
+    
+                marker_d5e6bc97004cdfc71ce7f7e77a77dd48.setIcon(icon_f5de730d1ebafb271e45cb39786b5665);
+            
+    
+            var marker_dca70b4a635f10fd9c0614409b4af983 = L.marker(
+                [48.8663533, 2.3394854],
+                {
+}
+            ).addTo(map_ebb21470a7db15f712126bd851bc7081);
+        
+    
+            var icon_234b7e026358fc238b4894b7293667bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9c709e2aaae0297b7d44ca71236b3963 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f1fd646a0e63b4d5c77b3cbc2a21fce7 = $(`<div id="html_f1fd646a0e63b4d5c77b3cbc2a21fce7" style="width: 100.0%; height: 100.0%;">         <b>Galerie Vivienne</b><br>         Address: 4 Rue des Petits Champs, 75002 Paris, France<br>         Rating: 4.5 (5368 reviews)<br>Distance from center: 1.60 km<br>Types: shopping_mall, historical_landmark, tourist_attraction, art_gallery, historical_place, clothing_store, home_goods_store, book_store, store, restaurant, food, point_of_interest, establishment<br>Found via: {'includedTypes': ['book_store']}</div>`)[0];
+                popup_9c709e2aaae0297b7d44ca71236b3963.setContent(html_f1fd646a0e63b4d5c77b3cbc2a21fce7);
+            
+        
+
+        marker_dca70b4a635f10fd9c0614409b4af983.bindPopup(popup_9c709e2aaae0297b7d44ca71236b3963)
+        ;
+
+        
+    
+    
+                marker_dca70b4a635f10fd9c0614409b4af983.setIcon(icon_234b7e026358fc238b4894b7293667bf);
+            
+    
+            var marker_65955c24dfc8995dfb57c3d74e7bbfd6 = L.marker(
+                [48.861304, 2.3473501],
+                {
+}
+            ).addTo(map_ebb21470a7db15f712126bd851bc7081);
+        
+    
+            var icon_005c9db234137961938191ef0c4d0d5e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9b018c70d541b4f30dbb23be2c0364a0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e908dcdabb136c593b01c5246c6f29cb = $(`<div id="html_e908dcdabb136c593b01c5246c6f29cb" style="width: 100.0%; height: 100.0%;">         <b>FNAC Paris - Forum des Halles</b><br>         Address: Galerie commerciale Westfield Portes Berger, 1-7 Rue Pierre Lescot, 75001 Paris, France<br>         Rating: 3.9 (18281 reviews)<br>Distance from center: 0.93 km<br>Types: department_store, cell_phone_store, electronics_store, home_goods_store, book_store, store, point_of_interest, establishment<br>Found via: {'includedTypes': ['book_store']}</div>`)[0];
+                popup_9b018c70d541b4f30dbb23be2c0364a0.setContent(html_e908dcdabb136c593b01c5246c6f29cb);
+            
+        
+
+        marker_65955c24dfc8995dfb57c3d74e7bbfd6.bindPopup(popup_9b018c70d541b4f30dbb23be2c0364a0)
+        ;
+
+        
+    
+    
+                marker_65955c24dfc8995dfb57c3d74e7bbfd6.setIcon(icon_005c9db234137961938191ef0c4d0d5e);
+            
+    
+            var marker_82509e1d52390cde9bb54dc9ca8a4d95 = L.marker(
+                [48.8505867, 2.3425186],
+                {
+}
+            ).addTo(map_ebb21470a7db15f712126bd851bc7081);
+        
+    
+            var icon_27d187f2b3e7fa79155e2e7decd62f44 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e2a45b4f0290c29546d4f49b2cb5f42 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0e80b2bda80e84db2c3161f12f2ff611 = $(`<div id="html_0e80b2bda80e84db2c3161f12f2ff611" style="width: 100.0%; height: 100.0%;">         <b>Gibert - Librairie générale</b><br>         Address: 26 Bd Saint-Michel, 75006 Paris, France<br>         Rating: 4.5 (8627 reviews)<br>Distance from center: 0.42 km<br>Types: book_store, store, point_of_interest, establishment<br>Found via: {'includedTypes': ['book_store']}</div>`)[0];
+                popup_1e2a45b4f0290c29546d4f49b2cb5f42.setContent(html_0e80b2bda80e84db2c3161f12f2ff611);
+            
+        
+
+        marker_82509e1d52390cde9bb54dc9ca8a4d95.bindPopup(popup_1e2a45b4f0290c29546d4f49b2cb5f42)
+        ;
+
+        
+    
+    
+                marker_82509e1d52390cde9bb54dc9ca8a4d95.setIcon(icon_27d187f2b3e7fa79155e2e7decd62f44);
+            
+    
+            var marker_978b28d158f2139599c1d91f27f7c782 = L.marker(
+                [48.851562099999995, 2.3276854],
+                {
+}
+            ).addTo(map_ebb21470a7db15f712126bd851bc7081);
+        
+    
+            var icon_7fe38134bacf0a5c8f88f00a25f6df62 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c59ee7c9209ea1a8473e461e5e6c64c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3ce7238764dadf90baa9d6a70910911a = $(`<div id="html_3ce7238764dadf90baa9d6a70910911a" style="width: 100.0%; height: 100.0%;">         <b>Hermès</b><br>         Address: 17 Rue de Sèvres, 75006 Paris, France<br>         Rating: 4.2 (2470 reviews)<br>Distance from center: 1.43 km<br>Types: book_store, cafe, store, food, point_of_interest, establishment<br>Found via: {'includedTypes': ['book_store']}</div>`)[0];
+                popup_7c59ee7c9209ea1a8473e461e5e6c64c.setContent(html_3ce7238764dadf90baa9d6a70910911a);
+            
+        
+
+        marker_978b28d158f2139599c1d91f27f7c782.bindPopup(popup_7c59ee7c9209ea1a8473e461e5e6c64c)
+        ;
+
+        
+    
+    
+                marker_978b28d158f2139599c1d91f27f7c782.setIcon(icon_7fe38134bacf0a5c8f88f00a25f6df62);
+            
+    
+            var marker_11b86f5a3a59f9556d5500b56b9eee94 = L.marker(
+                [48.844246999999996, 2.330402],
+                {
+}
+            ).addTo(map_ebb21470a7db15f712126bd851bc7081);
+        
+    
+            var icon_d9ab65593713d4fd5d7b6f519d6a5faf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe67ba52d7cce98204c9e17525030bc1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_35c9669f15ce93bc2b2d8e50ea315e0f = $(`<div id="html_35c9669f15ce93bc2b2d8e50ea315e0f" style="width: 100.0%; height: 100.0%;">         <b>Lucernaire</b><br>         Address: 53 Rue Notre Dame des Champs, 75006 Paris, France<br>         Rating: 4.5 (802 reviews)<br>Distance from center: 1.56 km<br>Types: performing_arts_theater, movie_theater, book_store, event_venue, store, restaurant, food, point_of_interest, establishment<br>Found via: {'includedTypes': ['book_store']}</div>`)[0];
+                popup_fe67ba52d7cce98204c9e17525030bc1.setContent(html_35c9669f15ce93bc2b2d8e50ea315e0f);
+            
+        
+
+        marker_11b86f5a3a59f9556d5500b56b9eee94.bindPopup(popup_fe67ba52d7cce98204c9e17525030bc1)
+        ;
+
+        
+    
+    
+                marker_11b86f5a3a59f9556d5500b56b9eee94.setIcon(icon_d9ab65593713d4fd5d7b6f519d6a5faf);
+            
+    
+            var marker_d46c70dff11bf786a943293315a6c587 = L.marker(
+                [48.861303299999996, 2.3473482999999997],
+                {
+}
+            ).addTo(map_ebb21470a7db15f712126bd851bc7081);
+        
+    
+            var icon_3e9c6a2f11296d582b3e3b28763a7941 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e2c077aca979d5d96f8b91914f2575e8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7390f34683c762de1d901de3d890b6bb = $(`<div id="html_7390f34683c762de1d901de3d890b6bb" style="width: 100.0%; height: 100.0%;">         <b>Fnac</b><br>         Address: Les Halles, 75001 Paris, France<br>         Rating: 3.1 (196 reviews)<br>Distance from center: 0.93 km<br>Types: book_store, store, point_of_interest, establishment<br>Found via: {'includedTypes': ['book_store']}</div>`)[0];
+                popup_e2c077aca979d5d96f8b91914f2575e8.setContent(html_7390f34683c762de1d901de3d890b6bb);
+            
+        
+
+        marker_d46c70dff11bf786a943293315a6c587.bindPopup(popup_e2c077aca979d5d96f8b91914f2575e8)
+        ;
+
+        
+    
+    
+                marker_d46c70dff11bf786a943293315a6c587.setIcon(icon_3e9c6a2f11296d582b3e3b28763a7941);
+            
+    
+            var marker_2030bdff4adad303ff1cf077cc4a63c0 = L.marker(
+                [48.8657841, 2.3613284],
+                {
+}
+            ).addTo(map_ebb21470a7db15f712126bd851bc7081);
+        
+    
+            var icon_8423dd99bbb6b0e09e60f50eaace4ffa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44b8c2b901e0a95ff8006cc6657302b2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_90e20743987838573136116def611fd3 = $(`<div id="html_90e20743987838573136116def611fd3" style="width: 100.0%; height: 100.0%;">         <b>OFR Bookshop</b><br>         Address: 20 Rue Dupetit-Thouars, 75003 Paris, France<br>         Rating: 3.8 (776 reviews)<br>Distance from center: 1.77 km<br>Types: book_store, store, point_of_interest, establishment<br>Found via: {'includedTypes': ['book_store']}</div>`)[0];
+                popup_44b8c2b901e0a95ff8006cc6657302b2.setContent(html_90e20743987838573136116def611fd3);
+            
+        
+
+        marker_2030bdff4adad303ff1cf077cc4a63c0.bindPopup(popup_44b8c2b901e0a95ff8006cc6657302b2)
+        ;
+
+        
+    
+    
+                marker_2030bdff4adad303ff1cf077cc4a63c0.setIcon(icon_8423dd99bbb6b0e09e60f50eaace4ffa);
+            
+    
+            var marker_df6b930cb1420bd67a61f87606edecbc = L.marker(
+                [48.8650617, 2.3285465999999997],
+                {
+}
+            ).addTo(map_ebb21470a7db15f712126bd851bc7081);
+        
+    
+            var icon_eaa6aeed43576e53d813bef9dd815766 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_02c3d175c539f76b18bdb5a8a9a85ad1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c5b7c8a3cd1de245d7de2f94baa57b14 = $(`<div id="html_c5b7c8a3cd1de245d7de2f94baa57b14" style="width: 100.0%; height: 100.0%;">         <b>Librairie Galignani</b><br>         Address: 224 Rue de Rivoli, 75001 Paris, France<br>         Rating: 4.5 (1170 reviews)<br>Distance from center: 1.92 km<br>Types: book_store, store, point_of_interest, establishment<br>Found via: {'includedTypes': ['book_store']}</div>`)[0];
+                popup_02c3d175c539f76b18bdb5a8a9a85ad1.setContent(html_c5b7c8a3cd1de245d7de2f94baa57b14);
+            
+        
+
+        marker_df6b930cb1420bd67a61f87606edecbc.bindPopup(popup_02c3d175c539f76b18bdb5a8a9a85ad1)
+        ;
+
+        
+    
+    
+                marker_df6b930cb1420bd67a61f87606edecbc.setIcon(icon_eaa6aeed43576e53d813bef9dd815766);
+            
+    
+            var marker_0c035a23d6d5b85a8aeb236f952c3f2d = L.marker(
+                [48.8517824, 2.3445377],
+                {
+}
+            ).addTo(map_ebb21470a7db15f712126bd851bc7081);
+        
+    
+            var icon_00d2eb84a4bedbc45c24bef0b1b77ab5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_68f782fc93740ec4960b26e0e4db8a24 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_23309aa038064e07dbdb8df81f2e36e4 = $(`<div id="html_23309aa038064e07dbdb8df81f2e36e4" style="width: 100.0%; height: 100.0%;">         <b>The Abbey Bookshop</b><br>         Address: 29 Rue de la Parcheminerie, 75005 Paris, France<br>         Rating: 4.7 (1021 reviews)<br>Distance from center: 0.22 km<br>Types: book_store, store, point_of_interest, establishment<br>Found via: {'includedTypes': ['book_store']}</div>`)[0];
+                popup_68f782fc93740ec4960b26e0e4db8a24.setContent(html_23309aa038064e07dbdb8df81f2e36e4);
+            
+        
+
+        marker_0c035a23d6d5b85a8aeb236f952c3f2d.bindPopup(popup_68f782fc93740ec4960b26e0e4db8a24)
+        ;
+
+        
+    
+    
+                marker_0c035a23d6d5b85a8aeb236f952c3f2d.setIcon(icon_00d2eb84a4bedbc45c24bef0b1b77ab5);
+            
+    
+            var marker_d0aebecac8ed48f1afbb1c948100ab15 = L.marker(
+                [48.863020600000006, 2.3602071],
+                {
+}
+            ).addTo(map_ebb21470a7db15f712126bd851bc7081);
+        
+    
+            var icon_49847041b3ff5f7fb38d77fb43a8b7ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4419ff04cca691c5aec0ebe5f79190e5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_91d2dc0bdbfb5b1ab76e508c9b85d276 = $(`<div id="html_91d2dc0bdbfb5b1ab76e508c9b85d276" style="width: 100.0%; height: 100.0%;">         <b>Henri Cartier Bresson Foundation</b><br>         Address: 79 Rue des Archives, 75003 Paris, France<br>         Rating: 4.2 (788 reviews)<br>Distance from center: 1.48 km<br>Types: museum, book_store, store, point_of_interest, establishment<br>Found via: {'includedTypes': ['book_store']}</div>`)[0];
+                popup_4419ff04cca691c5aec0ebe5f79190e5.setContent(html_91d2dc0bdbfb5b1ab76e508c9b85d276);
+            
+        
+
+        marker_d0aebecac8ed48f1afbb1c948100ab15.bindPopup(popup_4419ff04cca691c5aec0ebe5f79190e5)
+        ;
+
+        
+    
+    
+                marker_d0aebecac8ed48f1afbb1c948100ab15.setIcon(icon_49847041b3ff5f7fb38d77fb43a8b7ac);
+            
+    
+            var marker_971ef79752dbb8216a315cbddf0802c6 = L.marker(
+                [48.8654833, 2.3336221999999998],
+                {
+}
+            ).addTo(map_ebb21470a7db15f712126bd851bc7081);
+        
+    
+            var icon_8d7719856be6f41fbca8c3904841ad03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7b0a17cf59319d3e2e95d9076f4ed947 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e1ef431501390f9ac28cbfc5c6533c5a = $(`<div id="html_e1ef431501390f9ac28cbfc5c6533c5a" style="width: 100.0%; height: 100.0%;">         <b>JUNKUDO Paris</b><br>         Address: 18 Rue des Pyramides, 75001 Paris, France<br>         Rating: 4.7 (2272 reviews)<br>Distance from center: 1.71 km<br>Types: book_store, store, point_of_interest, establishment<br>Found via: {'includedTypes': ['book_store']}</div>`)[0];
+                popup_7b0a17cf59319d3e2e95d9076f4ed947.setContent(html_e1ef431501390f9ac28cbfc5c6533c5a);
+            
+        
+
+        marker_971ef79752dbb8216a315cbddf0802c6.bindPopup(popup_7b0a17cf59319d3e2e95d9076f4ed947)
+        ;
+
+        
+    
+    
+                marker_971ef79752dbb8216a315cbddf0802c6.setIcon(icon_8d7719856be6f41fbca8c3904841ad03);
+            
+    
+            var marker_707ff2ca9415201c9a6cfd9f882694d3 = L.marker(
+                [48.858834699999996, 2.3498779],
+                {
+}
+            ).addTo(map_ebb21470a7db15f712126bd851bc7081);
+        
+    
+            var icon_5d31a8b9beff48094637be1ff9a4fd65 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d5a8b7faf327587503407f641aa4d5ef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bdfa4c2fdd8006dc5cbc06c19edbcc14 = $(`<div id="html_bdfa4c2fdd8006dc5cbc06c19edbcc14" style="width: 100.0%; height: 100.0%;">         <b>Book Off Châtelet</b><br>         Address: 9 Rue Saint-Martin, 75004 Paris, France<br>         Rating: 4.5 (955 reviews)<br>Distance from center: 0.69 km<br>Types: movie_rental, book_store, store, point_of_interest, establishment<br>Found via: {'includedTypes': ['book_store']}</div>`)[0];
+                popup_d5a8b7faf327587503407f641aa4d5ef.setContent(html_bdfa4c2fdd8006dc5cbc06c19edbcc14);
+            
+        
+
+        marker_707ff2ca9415201c9a6cfd9f882694d3.bindPopup(popup_d5a8b7faf327587503407f641aa4d5ef)
+        ;
+
+        
+    
+    
+                marker_707ff2ca9415201c9a6cfd9f882694d3.setIcon(icon_5d31a8b9beff48094637be1ff9a4fd65);
+            
+    
+            var marker_5fcf25226ca80325b1b3fe7c0c760c65 = L.marker(
+                [48.8501931, 2.332404],
+                {
+}
+            ).addTo(map_ebb21470a7db15f712126bd851bc7081);
+        
+    
+            var icon_e967e61762499a19d73aa7c5d2db6936 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f09d6e901311243d79657b2d61dfaf2a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_231974151a717e5acf074ead00c63e9f = $(`<div id="html_231974151a717e5acf074ead00c63e9f" style="width: 100.0%; height: 100.0%;">         <b>La Procure</b><br>         Address: 3 Rue de Mézières, 75006 Paris, France<br>         Rating: 4.6 (1716 reviews)<br>Distance from center: 1.12 km<br>Types: book_store, store, point_of_interest, establishment<br>Found via: {'includedTypes': ['book_store']}</div>`)[0];
+                popup_f09d6e901311243d79657b2d61dfaf2a.setContent(html_231974151a717e5acf074ead00c63e9f);
+            
+        
+
+        marker_5fcf25226ca80325b1b3fe7c0c760c65.bindPopup(popup_f09d6e901311243d79657b2d61dfaf2a)
+        ;
+
+        
+    
+    
+                marker_5fcf25226ca80325b1b3fe7c0c760c65.setIcon(icon_e967e61762499a19d73aa7c5d2db6936);
+            
+    
+            var marker_7d9231ed9f4979eb180b0925d9f94228 = L.marker(
+                [48.8582914, 2.356238],
+                {
+}
+            ).addTo(map_ebb21470a7db15f712126bd851bc7081);
+        
+    
+            var icon_5eb4eba5fffe6be92fc5acb9b9c8b8b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba864a98c3cda01d2f7eef112a86d9e4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b9fe19b1c58a618d4be282a9e388fd89 = $(`<div id="html_b9fe19b1c58a618d4be282a9e388fd89" style="width: 100.0%; height: 100.0%;">         <b>Nature & Découvertes</b><br>         Address: 20 bis Rue Sainte-Croix de la Bretonnerie, 75004 Paris, France<br>         Rating: 4.5 (1945 reviews)<br>Distance from center: 0.90 km<br>Types: gift_shop, grocery_store, home_goods_store, book_store, food_store, health, store, food, point_of_interest, establishment<br>Found via: {'includedTypes': ['book_store']}</div>`)[0];
+                popup_ba864a98c3cda01d2f7eef112a86d9e4.setContent(html_b9fe19b1c58a618d4be282a9e388fd89);
+            
+        
+
+        marker_7d9231ed9f4979eb180b0925d9f94228.bindPopup(popup_ba864a98c3cda01d2f7eef112a86d9e4)
+        ;
+
+        
+    
+    
+                marker_7d9231ed9f4979eb180b0925d9f94228.setIcon(icon_5eb4eba5fffe6be92fc5acb9b9c8b8b1);
+            
+    
+            var marker_8946e890ba69e862f8fcb9980bdec2a5 = L.marker(
+                [48.861129299999995, 2.3475642999999997],
+                {
+}
+            ).addTo(map_ebb21470a7db15f712126bd851bc7081);
+        
+    
+            var icon_2b6a1db0ac2e10660568dddb0695aca9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e47850638006a13056b72efd1a0fa6bb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_887d942175dbee7f84117555593b3f6a = $(`<div id="html_887d942175dbee7f84117555593b3f6a" style="width: 100.0%; height: 100.0%;">         <b>FNAC Paris - Gare Châtelet</b><br>         Address: Gare RER A, 75001 Paris, France<br>         Rating: 4 (465 reviews)<br>Distance from center: 0.92 km<br>Types: department_store, cell_phone_store, electronics_store, home_goods_store, book_store, store, point_of_interest, establishment<br>Found via: {'includedTypes': ['book_store']}</div>`)[0];
+                popup_e47850638006a13056b72efd1a0fa6bb.setContent(html_887d942175dbee7f84117555593b3f6a);
+            
+        
+
+        marker_8946e890ba69e862f8fcb9980bdec2a5.bindPopup(popup_e47850638006a13056b72efd1a0fa6bb)
+        ;
+
+        
+    
+    
+                marker_8946e890ba69e862f8fcb9980bdec2a5.setIcon(icon_2b6a1db0ac2e10660568dddb0695aca9);
+            
+    
+            var marker_bfd040bffd89109c89bfd394f7a37074 = L.marker(
+                [48.857498, 2.3311509],
+                {
+}
+            ).addTo(map_ebb21470a7db15f712126bd851bc7081);
+        
+    
+            var icon_e78590c568a9b73ccf9969434798ddc2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2ee328eaa317f6002d367af2215481e4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_db7ba1c6f75885729e5233c7d4fc7fbd = $(`<div id="html_db7ba1c6f75885729e5233c7d4fc7fbd" style="width: 100.0%; height: 100.0%;">         <b>Maison Gainsbourg</b><br>         Address: 14 Rue de Verneuil, 75007 Paris, France<br>         Rating: 4.8 (1185 reviews)<br>Distance from center: 1.27 km<br>Types: cultural_center, gift_shop, museum, book_store, store, point_of_interest, establishment<br>Found via: {'includedTypes': ['book_store']}</div>`)[0];
+                popup_2ee328eaa317f6002d367af2215481e4.setContent(html_db7ba1c6f75885729e5233c7d4fc7fbd);
+            
+        
+
+        marker_bfd040bffd89109c89bfd394f7a37074.bindPopup(popup_2ee328eaa317f6002d367af2215481e4)
+        ;
+
+        
+    
+    
+                marker_bfd040bffd89109c89bfd394f7a37074.setIcon(icon_e78590c568a9b73ccf9969434798ddc2);
+            
+    
+            var marker_e521d4cc5bce66263ade14598d53ab84 = L.marker(
+                [48.868955899999996, 2.3354268],
+                {
+}
+            ).addTo(map_ebb21470a7db15f712126bd851bc7081);
+        
+    
+            var icon_38844468f91a4eff095179db050c9f45 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a9547da09521b363bf42a3a72079b63d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cc3c1f89df8b46233244e9768d03aa33 = $(`<div id="html_cc3c1f89df8b46233244e9768d03aa33" style="width: 100.0%; height: 100.0%;">         <b>Book Off Quatre-Septembre</b><br>         Address: 11 Rue Monsigny, 75002 Paris, France<br>         Rating: 4.5 (1968 reviews)<br>Distance from center: 1.98 km<br>Types: movie_rental, book_store, store, point_of_interest, establishment<br>Found via: {'includedTypes': ['book_store']}</div>`)[0];
+                popup_a9547da09521b363bf42a3a72079b63d.setContent(html_cc3c1f89df8b46233244e9768d03aa33);
+            
+        
+
+        marker_e521d4cc5bce66263ade14598d53ab84.bindPopup(popup_a9547da09521b363bf42a3a72079b63d)
+        ;
+
+        
+    
+    
+                marker_e521d4cc5bce66263ade14598d53ab84.setIcon(icon_38844468f91a4eff095179db050c9f45);
+            
+</script>
+</html>
